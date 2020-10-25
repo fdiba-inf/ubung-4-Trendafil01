@@ -10,7 +10,7 @@ public class ArrayInput {
         int count = input.nextInt();
         int[] numbers = new int[count];
 
-        System.out.println("Enter numbers: ");
+        
         for (int index = 0; index < numbers.length; index++) {
             numbers[index] = input.nextInt();
         }

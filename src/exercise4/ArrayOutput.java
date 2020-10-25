@@ -9,18 +9,21 @@ public class ArrayOutput {
         Scanner input = new Scanner(System.in);
         int count = input.nextInt();
         int[] numbers = new int[count];
-       
-
+  
         System.out.println("Enter numbers: ");
         for (int index = 0; index < numbers.length; index++) {
             numbers[index] = input.nextInt();
         }
+         char space = ' ';
+         int i = 0;
+         while (i < name.length) {
 
-        System.out.println(numbers[0]);
-        System.out.println(" " + numbers[1]);
-        System.out.println(" " + " " + numbers[2]);
-        System.out.println(" " + " " + " " + numbers[3]);
-        System.out.println(" " + " " + " " + " " + numbers[4]);
+           for (int counter = 0; counter < i; counter++) {
+             System.out.print(space);
+           }
+         System.out.println(name[i]);
+         i++;
+        
     }
 
 }

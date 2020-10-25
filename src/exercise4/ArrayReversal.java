@@ -1,30 +1,29 @@
 package exercise4;
 
-import java.util.Arrays;
 import java.util.Scanner;
+import java.util.Arrays;
 
 public class ArrayReversal {
 
-    public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
-        int count = scanner.nextInt();
-        char[] letters = new char[count];
-        char[] letters2 = new char[count];
-        int reverse = letters.lenght - 1;
-        System.out.println("Enter letters: ");
-        for (int i = 0; i < letters.length; i++) {
-            letters[i] = scanner.next().charAt(0);
-        }
-        
-        for (int i2=0;i2< kdi.length;i2++){
-           letters2[i2] = letters[reverse];
-           reverse--;
-        }
+  public static void main(String[] args) {
+    Scanner input = new Scanner(System.in);
 
-      
-        String lettersAsString = Arrays.toString(letters);
-        System.out.println("Reversed symbols: " + letterssAsString);
-        }
+    int size = input.nextInt();
+    char [] letter = new char[size];
+
+    for (int index = 0; index < letter.length; index++) {
+      letter[index] = input.next().charAt(0);
     }
 
-}
+    char [] reverse = new char[size];
+    int index = letter.length - 1;
+    int address = 0;
+    for (;index >= 0; index--){
+      reverse[address] = letter[index];
+      address++;
+    }
+
+    String charToString = Arrays.toString(reverse);
+    System.out.println("Reversed symbols: " + charToString);
+  }
+} 
